@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: kalimati;
+    src:  url(fonts/Kalimati Regular.otf);
+ }
+.col-2{
+     position: relative;
+    display:flex;
+    align-items:center;
+    float: right;
+    background-color: #868199;
+}
+.col-2 img{
+    position:absolute;
+    right:10px;
+}
+.col-10{
+    background-color: #5f5991;
+    color:#fff;
+    font-family: kalimati;
+    display:flex;
+    align-items: center;
+}
+.col-10 h4{
+    font-size:18px;
+    letter-spacing: 0.5px;
+}
+.h4{
+    background-color: grey;
+    font-size: 16px;
+    color:#fff;
+    font-weight:bold;
+}
+.h4 p{
+    padding:8px 0px 8px 30px;
+    display:flex;
+    align-items: center;
+}
+.h3{
+    font-family: kalimati;
+    font-size:18px;
+}
+table{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:0px;
+    margin-bottom: 10px;
+    border-collapse: collapse;
+    border: 1px solid #bdc3d7;
+    box-shadow:2px 2px 12px rgba(0,0,0,0.2),-1px -1px 8px rgba(0, 0, 0, 0.2);
+    font-family: kalimati;
+}
+tr{
+    transition: all .2s ease-in;
+    cursor: pointer;
+}
+table th,td{
+   padding: 12px;
+   text-align: center;
+   border-bottom: 1px solid #ddd; 
+}
+#header{
+    background-color: #16a085;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+}
+table td{
+    font-size: 16px;
+    font-weight: 300;
+    overflow-x: auto;
+}
+tr:hover{
+    background-color: #f5f5f5;
+    transform: scale(1.01);
+    box-shadow:2px 2px 12px rgba(0,0,0,0.2),-1px -1px 8px rgba(0, 0, 0, 0.2);
+}
+/* responsive banaunaka lagi */
+
+@media only screen and ( max-width: 768px) 
+{
+    .col-10 h4{
+        font-size:17px;
+    }
+    .h3{
+        font-size: 16px;
+        }
+ table th
+ {
+   font-size: 14px;
+ }
+ table td
+ {
+   font-size: 15px;
+ }  
+}
+@media only screen and ( max-width: 600px){
+    .col-2 img{
+        width:90px;
+        height:90px;
+    }
+}
+ @media only screen and ( max-width: 560px) {
+    .col-10 h4{
+        font-size:16px;
+    }
+    .h4 p{
+        font-size:15px;
+    }
+    .col-2 img{
+        width:80px;
+        height:80px;
+    }
+    table
+    {
+        width: 90%;
+    }
+    .h3
+    {
+    font-size: 14px;
+    } 
+    table th
+    {
+    font-size: 12px;
+    }
+    table td
+    {
+    font-size: 13px;
+    }  
+    }
+
+@media only screen and (max-width:490px){
+    .col-10 h4{
+        font-size:15px;
+        }
+    .h4 p{
+        font-size:14px;
+        }
+    .col-2 img{
+        width:60px;
+        height:60px;  
+        }
+    .h3{
+        font-size:12px;
+        margin:0px;
+    }
+    table
+        {
+            width: 80%;
+        } 
+    table th
+    {
+    font-size: 11px;
+    }
+    table td
+    {
+    font-size: 12px;
+    }  
+    }
+@media only screen and (max-width:460px){
+    .col-10 h4{
+        font-size:14px;
+    }
+    .h4 p{
+     font-size:13px;
+    }
+
+    .col-2 img{
+        right: 0px;
+        width:60px;
+        height:60px;
+    }  }
+
+    @media only screen and (max-width:400px){
+    .col-10 h4{
+        font-size:12px;
+    }
+    .h4 p{
+     font-size:11px;
+    }
+   .h3{
+    font-size:11px;
+    }
+}
+    @media only screen and (max-width:320px){
+        .col-2 img{
+            width: 50px;
+            height: 50px;
+        }
+    }
